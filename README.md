@@ -1,0 +1,47 @@
+<html lang=en>
+<head>
+<title>My page</title>
+<style>
+div{color:red}
+</style>
+<script src=prog1.js></script>
+</head>
+<body style=“margin: 5px 5px 5px 5px”>
+<h1> Title of the Document/ Book Title</h1>
+<p>This is the first paragraph</p >
+<div> Specify an area to apply a style sheet</div>
+Span is a small div, specified in a line<span style>Special</span>
+<ol>
+  <li> Math </li>
+  <li> CIS </li>
+</ol>
+<ul>
+<table border=1 align=center width=500 cellspacing=10 cellpadding=10>
+  <tr height=50 valign=top>
+  <tr>
+    <td colspan=2>Schedule</td>
+  <tr>
+    <td> Monday </td>
+    <td> Tuesday </td>
+  </tr>
+  <tr>
+     <li>Math<li>
+     <li>CIS</li>
+  </tr>
+</table>
+< img src="https://pic.netbian.com/uploads/allimg/220308/005009-1646671809fd71.jpg" width=300>
+<form>
+<table><tr>
+ <td>Last name:</td>
+ <td> <input name=lastname> </td>
+ <tr><td>Major:</td>
+ <td>
+ <select name=major>
+  <option value=1> CIS </option>
+  <option value=2> Math </option>
+ <select>
+ </td></tr>
+
+</form>
+</body>
+</html>
