@@ -22,5 +22,5 @@ var hanoi = function(floor,towerA,towerB,towerC){
     hanoi(floor-1,towerB,towerA,towerC);
   }
 }
-hanoi(3,'A','B','C');
+hanoi(7,'A','B','C');
 </script>
