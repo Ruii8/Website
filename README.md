@@ -1,10 +1,13 @@
 <body>
-<h3 style="color:blue; text-align:center;")
+<h3 style="color:blue;text-align:center;")
+          <span style ="font-family:comic sans ms, cursive;"><span style="font-size:26px;">Example of Form and Table</span></span></h3>
+<p style="text-align:center;">
+         &nbsp;</p>
 <form action="https://edqaa.com/t/Echo" enctype="application/x-www-form-urlencoded" id="11" method="post" name="11" target="_blank">
-	<p style="text-align: center;">
-		Application Form</p>
 	<table align="center" border="0" cellpadding="4" cellspacing="4" style="background:url(http://img-pre.ivsky.com/img/bizhi/pre/201105/15/flower_pattern_background_wa03_010l.jpg)">
-		<tbody>
+                        <caption>
+                                 Application Form</caption>
+                        <tbody>
 			<tr>
 				<td>
 					Student id</td>
