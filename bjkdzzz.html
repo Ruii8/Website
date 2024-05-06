@@ -1,0 +1,61 @@
+<html>
+<body>
+
+number of disks to Play<select id=numdisks></select>
+<input id=startbtn type=button onclick=startgame() class=button1 value=Start
+onmouseover=showhint('Start the game','Start')onmouseout=hidehint('Start')>
+>
+<input id=pausebtn type=button onclick=pausegame() class=button1 value=Pause>
+<input id=resumebtn type=button onclick=resumetgame() class=button1 value=Resume>
+Period Time<select id=period></select>
+<script>
+Let s = document.getElementByld('numdisks');
+for(let n=0;n < 10;n++)
+  s.option[n] = new Option((3+n),3+n);
+
+s = document.getElementByld('period');
+for(let n=0;n < 5;n++)
+  s.option[n] = new Option(0.5*(n+1),0.5*(n+1));
+
+function startgame()
+{
+   let s = document.getElementByld('numdisks');
+   N = s.options[s.selectedIndex].value;
+   tower(N);
+   move();
+   movedisk(0);
+}
+
+function pausegame()
+{
+   clearTimeout(handle);
+}
+
+function resumegame()
+{
+   movedisk(orderOflnstruction);
+}
+function showhint(hint)
+{
+   Let dv = document.createElement('div');
+   Dv.id='hint';
+   Dv.cssText = 'position:absolute;left:200px;top:300px;
+   background-color:yellow;color:purple;border-radius:4px;box-shadow:4;
+   Dv.innerHTML = hint;
+   Document.body.appendChild(dv);
+}
+function hidehint(btnvalue)
+{
+  let dv = document.getElementByld(btnvalue);
+  dv.parentNode.removeChild(dv);
+}
+let time;
+window.onblur = function()
+{
+time = (new Date()).getTime();
+}
+Wwndow.onblue = function(){let time1 = (new Date()).getTime();let diff = time1-time;
+  showhint('You have left for' + diff + 'milliseconds','time');
+  setTimeout("hidehint('time')",2000);
+}
+</script>
